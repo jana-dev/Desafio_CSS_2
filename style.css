@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-direction: border-box;
+    
+}
+
+.text {
+    font-family: 'Baloo Tamma 2', 'Roboto';
+    font-weight: 500;
+    font-size: 3rem;
+    color: #ffffff;
+    border: 3px solid #fff;
+    padding: 2rem 4rem;
+}
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #ffdecf, #ba7967, #5e6f64, #3f4441);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
